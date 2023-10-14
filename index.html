@@ -1,6 +1,224 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" type="X-icon" href="file:///C:/Users/Dell/Desktop/imageDGSjhjh.jpg.jpg">
+    <meta http-equiv="X-UA-compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>I  E  X  O</title>
+</head>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        /* Styles for the button and menu container */
+        .menu-container {
+            position: fixed;
+            top: 0;
+            right: 0;
+            padding: 20px;
+            z-index: 1;
+        }
+
+        /* Styles for the button */
+        .menu-button {
+            display: block;
+            width: 40px;
+            height: 30px;
+            position: relative;
+            cursor: pointer;
+        }
+
+        /* Bar elements that create the button icon */
+        .bar {
+            width: 100%;
+            height: 4px;
+            background-color: #bbbbbb;
+            position: absolute;
+            transition: 0.4s;
+        }
+
+        /* Top bar */
+        .bar:nth-child(1) {
+            top: 0;
+        }
+
+        /* Middle bar */
+        .bar:nth-child(2) {
+            top: 12px;
+        }
+
+        /* Bottom bar */
+        .bar:nth-child(3) {
+            top: 24px;
+        }
+
+        /* Add an animation when the button is clicked */
+        .menu-button.active .bar:nth-child(1) {
+            transform: rotate(-45deg) translate(-5px, 6px);
+        }
+        .menu-button.active .bar:nth-child(2) {
+            opacity: 0;
+        }
+        .menu-button.active .bar:nth-child(3) {
+            transform: rotate(45deg) translate(-5px, -6px);
+        }
+
+        /* Styles for the menu */
+        .menu {
+            display: none;
+            position: absolute;
+            top: 60px;
+            right: 0;
+            background: #333;
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .menu.active {
+            display: block;
+        }
+
+        .menu li {
+            padding: 10px;
+        }
+
+        .menu li a {
+            color: #c2bab7;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <!-- The menu container -->
+    <div class="menu-container">
+        <!-- The menu toggle button -->
+        <div class="menu-button" id="menuButton">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+
+        <!-- The menu -->
+            <ul class="menu" id="menu">
+        <li><a href="https://i-exo.github.io/IEXO/">Home</a></li>
+        <li><a href="https://i-exo.github.io/PhotoGallery/">Photo Gallery</a></li>
+        <li><a href="https://i-exo.github.io/Contact/">Contact</a></li>
+    </ul>
+    </div>
+
+    <script>
+        // JavaScript to toggle the button and menu's active class
+        document.getElementById("menuButton").addEventListener("click", function() {
+            this.classList.toggle("active");
+            document.getElementById("menu").classList.toggle("active");
+        });
+    </script>
+</body>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>I   E   X   O</title>
+    <style>
+        /* Add your CSS styles here */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        nav li {
+            display: inline;
+            margin-right: 20px;
+        }
+
+        main {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 25px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            font-size: 24px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        th, td {
+            padding: 10px;
+            border: 1px solid #ccc;
+        }
+
+        form {
+            margin-top: 20px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        textarea {
+            width:100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        input[type="submit"] {
+            background-color: #333;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>I  E  X  O</h1>
+    </header>
+</body background="file:///C:/Users/Dell/Desktop/M31-D20a--All-Combine-1-nousm-deline-v2.jpg"></body>
+    <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <style>
+            button{
+                font-size: 1.7rem;
+                border: none;
+                outline: none;
+                padding: 10px 12px;
+                border-radius: 20px;
+            }
+            
+        </style>
+    </head>
+<head>
     <style>
         /* Common styles for gallery and lightbox */
         .gallery {
@@ -122,5 +340,77 @@
             }
         });
     </script>
+    <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <style>
+            button{
+                font-size: 1.7rem;
+                border: none;
+                outline: none;
+                padding: 10px 12px;
+                border-radius: 20px;
+            }
+            
+        </style>
+    </head>
+    <button onclick="location.href='https://www.instagram.com/mohammad_fadel_talafha/'"><i class="fa-brands fa-instagram"></i></button>
+     </head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <style>
+            button{
+                font-size: 1.7rem;
+                border: none;
+                outline: none;
+                padding: 10px 12px;
+                border-radius: 20px;
+                text-align: right;
+            }
+            
+        </style>
+    </head>
+    </button onclick="location.href='https://www.instagram.com/mohammad_fadel_talafha/'"></i class="fa-solid fa-user-astronaut"></i></button>
+    
+        <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <style>
+            button{
+                font-size: 1.7rem;
+                border: none;
+                outline: none;
+                padding: 10px 12px;
+                border-radius: 20px;
+            }
+            
+        </style>
+    </head>
+    <button onclick="location.href='https://www.facebook.com/profile.php?id=100001231888923'"><i class="fa-brands fa-facebook"></i></button>
+
+    <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <style>
+            button{
+                font-size: 1.7rem;
+                border: none;
+                outline: none;
+                padding: 10px 12px;
+                border-radius: 20px;
+            }
+            
+        </style>
+    </head>
+    <button onclick="location.href='https://x.com/talafha_mohamma?t=iuV3H_SXLH5l_2DgonfQEQ&s=08'"><i class="fa-brands fa-twitter"></i></button>
 </body>
 </html>
