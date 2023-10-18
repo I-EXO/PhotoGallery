@@ -282,64 +282,109 @@
         }
     </style>
 </head>
-<body>
-    <div class="gallery">
-        <div class="gallery-item">
-            <img src="Sutren1T.jpeg" alt="Image 1">
-        </div>
-        <div class="gallery-item">
-            <img src="Moons1T.jpeg" alt="Image 2">
-        </div>
-        <div class="gallery-item">
-            <img src="image3.jpg" alt="Image 3">
-        </div>
-        <!-- Add more gallery items as needed -->
-    </div>
-
-    <div class="lightbox" id="lightbox">
-        <span class="close-button" id="close-button">&times;</span>
-        <img id="lightbox-image">
-        <span class="next-button" id="next-button">&#8594;</span>
-    </div>
-
-    <script>
-        const gallery = document.querySelector(".gallery");
-        const lightbox = document.getElementById("lightbox");
-        const lightboxImage = document.getElementById("lightbox-image");
-        const closeButton = document.getElementById("close-button");
-        const nextButton = document.getElementById("next-button");
-        const galleryItems = document.querySelectorAll(".gallery-item");
-        let currentImageIndex = 0;
-
-        function showImage(index) {
-            if (index >= 0 && index < galleryItems.length) {
-                const image = galleryItems[index].querySelector("img");
-                lightboxImage.src = image.src;
-                currentImageIndex = index;
-            }
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            background-color: #f0f0f0;
         }
 
-        closeButton.addEventListener("click", () => {
-            lightbox.style.display = "none";
-        });
+        .photo {
+            width: 300px;
+            height: 200px;
+            margin: 20px;
+            background: #fff;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.2s;
+            overflow: hidden;
+        }
 
-        nextButton.addEventListener("click", () => {
-            showImage(currentImageIndex + 1);
-        });
+        .photo img {
+            max-width: 100%;
+            max-height: 100%;
+            object-fit: cover;
+        }
 
-        galleryItems.forEach((item, index) => {
-            item.addEventListener("click", () => {
-                showImage(index);
-                lightbox.style.display = "flex";
-            });
-        });
+        .photo:hover {
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+<body>
+            <div class="photo-container">
+            <div class="photo">
+                <img src="file:///C:/Users/Dell/Desktop/Sutren1T.jpeg" alt="Photo 3">
+            </div>
+            <div class="text">sssssss</div>
+        </div>
+        <!-- Add more photos as needed -->
+    </div>
+            <div class="photo-container">
+            <div class="photo">
+                <img src="file:///C:/Users/Dell/Desktop/Sutren1T.jpeg" alt="Photo 3">
+            </div>
+            <div class="text">baddds</div>
+        </div>
+        <!-- Add more photos as needed -->
+    </div>
+            <div class="photo-container">
+            <div class="photo">
+                <img src="file:///C:/Users/Dell/Desktop/Sutren1T.jpeg" alt="Photo 3">
+            </div>
+            <div class="text">sutern and abood</div>
+        </div>
+        <!-- Add more photos as needed -->
+    </div>
+    <!-- Add more photos as needed -->
+      <div class="photo-container">
+            <div class="photo">
+                <img src="file:///C:/Users/Dell/Desktop/Sutren1T.jpeg" alt="Photo 3">
+            </div>
+            <div class="text">sssssss</div>
+        </div>
+        <!-- Add more photos as needed -->
+    </div>
+      <div class="photo-container">
+            <div class="photo">
+                <img src="file:///C:/Users/Dell/Desktop/Sutren1T.jpeg" alt="Photo 3">
+            </div>
+            <div class="text">sssssss</div>
+        </div>
+        <!-- Add more photos as needed -->
+    </div>
+      <div class="photo-container">
+            <div class="photo">
+                <img src="file:///C:/Users/Dell/Desktop/Sutren1T.jpeg" alt="Photo 3">
+            </div>
+            <div class="text">sssssss</div>
+        </div>
+        <!-- Add more photos as needed -->
+    </div>
+      <div class="photo-container">
+            <div class="photo">
+                <img src="file:///C:/Users/Dell/Desktop/Sutren1T.jpeg" alt="Photo 3">
+            </div>
+            <div class="text">sssssss</div>
+        </div>
+        <!-- Add more photos as needed -->
+    </div>
+      <div class="photo-container">
+            <div class="photo">
+                <img src="file:///C:/Users/Dell/Desktop/Sutren1T.jpeg" alt="Photo 3">
+            </div>
+            <div class="text">sssssss</div>
+        </div>
+        <!-- Add more photos as needed -->
+    </div>
+</body>
+</html>
 
-        lightbox.addEventListener("click", (event) => {
-            if (event.target === lightbox || event.target === closeButton) {
-                lightbox.style.display = "none";
-            }
-        });
-    </script>
     <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
