@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <link rel="shortcut icon" type="X-icon" href="imageDGSjhjh.jpg.jpg">
@@ -7,115 +7,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>I  E  X  O</title>
 </head>
-<head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <style>
-        /* Styles for the button and menu container */
-        .menu-container {
-            position: fixed;
-            top: 0;
-            right: 0;
-            padding: 20px;
-            z-index: 1;
-        }
-
-        /* Styles for the button */
-        .menu-button {
-            display: block;
-            width: 40px;
-            height: 30px;
-            position: relative;
-            cursor: pointer;
-        }
-
-        /* Bar elements that create the button icon */
-        .bar {
-            width: 100%;
-            height: 4px;
-            background-color: #bbbbbb;
-            position: absolute;
-            transition: 0.4s;
-        }
-
-        /* Top bar */
-        .bar:nth-child(1) {
-            top: 0;
-        }
-
-        /* Middle bar */
-        .bar:nth-child(2) {
-            top: 12px;
-        }
-
-        /* Bottom bar */
-        .bar:nth-child(3) {
-            top: 24px;
-        }
-
-        /* Add an animation when the button is clicked */
-        .menu-button.active .bar:nth-child(1) {
-            transform: rotate(-45deg) translate(-5px, 6px);
-        }
-        .menu-button.active .bar:nth-child(2) {
-            opacity: 0;
-        }
-        .menu-button.active .bar:nth-child(3) {
-            transform: rotate(45deg) translate(-5px, -6px);
-        }
-
-        /* Styles for the menu */
-        .menu {
-            display: none;
-            position: absolute;
-            top: 60px;
-            right: 0;
-            background: #333;
-            list-style: none;
-            padding: 0;
-            margin: 0;
-        }
-
-        .menu.active {
-            display: block;
-        }
-
-        .menu li {
-            padding: 10px;
-        }
-
-        .menu li a {
-            color: #c2bab7;
-            text-decoration: none;
-        }
-    </style>
-</head>
-<body>
-    <!-- The menu container -->
-    <div class="menu-container">
-        <!-- The menu toggle button -->
-        <div class="menu-button" id="menuButton">
-            <div class="bar"></div>
-            <div class="bar"></div>
-            <div class="bar"></div>
-        </div>
-
-        <!-- The menu -->
-            <ul class="menu" id="menu">
-        <li><a href="https://i-exo.github.io/IEXO/">Home</a></li>
-        <li><a href="https://i-exo.github.io/PhotoGallery/">Photo Gallery</a></li>
-        <li><a href="https://i-exo.github.io/Contact/">Contact</a></li>
-    </ul>
-    </div>
-
-    <script>
-        // JavaScript to toggle the button and menu's active class
-        document.getElementById("menuButton").addEventListener("click", function() {
-            this.classList.toggle("active");
-            document.getElementById("menu").classList.toggle("active");
-        });
-    </script>
-</body>
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -214,189 +105,6 @@
                 outline: none;
                 padding: 10px 12px;
                 border-radius: 20px;
-            }
-            
-        </style>
-    </head>
-<head>
-    <style>
-        /* Common styles for gallery and lightbox */
-        .gallery {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 10px;
-        }
-
-        .gallery-item {
-            flex: 0 0 calc(33.33% - 10px);
-            position: relative;
-            cursor: pointer;
-            transition: transform 0.3s;
-        }
-
-        .gallery-item img {
-            width: 100%;
-            height: auto;
-        }
-
-        .lightbox {
-            display: none;
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: rgba(0, 0, 0, 0.8);
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-        }
-
-        .lightbox img {
-            max-width: 80%;
-            max-height: 80%;
-        }
-
-        .close-button {
-            position: absolute;
-            top: 10px;
-            right: 10px;
-            cursor: pointer;
-            color: #fff;
-            font-size: 20px;
-        }
-
-        .next-button {
-            cursor: pointer;
-            color: #fff;
-            font-size: 20px;
-            margin-top: 10px;
-        }
-
-        /* Media query for phone screens */
-        @media (max-width: 767px) {
-            .gallery-item {
-                flex: 0 0 calc(50% - 10px);
-            }
-        }
-    </style>
-</head>
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <style>
-        body {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            background-color: #f0f0f0;
-        }
-
-        .photo {
-            width: 300px;
-            height: 200px;
-            margin: 20px;
-            background: #fff;
-            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-            transition: transform 0.2s;
-            overflow: hidden;
-        }
-
-        .photo img {
-            max-width: 100%;
-            max-height: 100%;
-            object-fit: cover;
-        }
-
-        .photo:hover {
-            transform: scale(1.05);
-        }
-    </style>
-</head>
-<body>
-            <div class="photo-container">
-            <div class="photo">
-                <img src="file:///C:/Users/Dell/Desktop/Sutren1T.jpeg" alt="Photo 3">
-            </div>
-            <div class="text">sssssss</div>
-        </div>
-        <!-- Add more photos as needed -->
-    </div>
-            <div class="photo-container">
-            <div class="photo">
-                <img src="file:///C:/Users/Dell/Desktop/Sutren1T.jpeg" alt="Photo 3">
-            </div>
-            <div class="text">baddds</div>
-        </div>
-        <!-- Add more photos as needed -->
-    </div>
-            <div class="photo-container">
-            <div class="photo">
-                <img src="file:///C:/Users/Dell/Desktop/Sutren1T.jpeg" alt="Photo 3">
-            </div>
-            <div class="text">sutern and abood</div>
-        </div>
-        <!-- Add more photos as needed -->
-    </div>
-    <!-- Add more photos as needed -->
-      <div class="photo-container">
-            <div class="photo">
-                <img src="file:///C:/Users/Dell/Desktop/Sutren1T.jpeg" alt="Photo 3">
-            </div>
-            <div class="text">sssssss</div>
-        </div>
-        <!-- Add more photos as needed -->
-    </div>
-      <div class="photo-container">
-            <div class="photo">
-                <img src="file:///C:/Users/Dell/Desktop/Sutren1T.jpeg" alt="Photo 3">
-            </div>
-            <div class="text">sssssss</div>
-        </div>
-        <!-- Add more photos as needed -->
-    </div>
-      <div class="photo-container">
-            <div class="photo">
-                <img src="file:///C:/Users/Dell/Desktop/Sutren1T.jpeg" alt="Photo 3">
-            </div>
-            <div class="text">sssssss</div>
-        </div>
-        <!-- Add more photos as needed -->
-    </div>
-      <div class="photo-container">
-            <div class="photo">
-                <img src="file:///C:/Users/Dell/Desktop/Sutren1T.jpeg" alt="Photo 3">
-            </div>
-            <div class="text">sssssss</div>
-        </div>
-        <!-- Add more photos as needed -->
-    </div>
-      <div class="photo-container">
-            <div class="photo">
-                <img src="file:///C:/Users/Dell/Desktop/Sutren1T.jpeg" alt="Photo 3">
-            </div>
-            <div class="text">sssssss</div>
-        </div>
-        <!-- Add more photos as needed -->
-    </div>
-</body>
-</html>
-
-    <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-        <style>
-            button{
-                font-size: 1.7rem;
-                border: none;
-                outline: none;
-                padding: 10px 12px;
-                border-radius: 20px;
                 color: #000000;
             }
             
@@ -461,5 +169,265 @@
         </style>
     </head>
     <button onclick="location.href='https://x.com/talafha_mohamma?t=iuV3H_SXLH5l_2DgonfQEQ&s=08'"><i class="fa-brands fa-twitter"></i></button>
+    <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        /* Styles for the button and menu container */
+        .menu-container {
+            position: fixed;
+            top: 0;
+            right: 0;
+            padding: 20px;
+            z-index: 1;
+        }
+
+        /* Styles for the button */
+        .menu-button {
+            display: block;
+            width: 40px;
+            height: 30px;
+            position: relative;
+            cursor: pointer;
+        }
+
+        /* Bar elements that create the button icon */
+        .bar {
+            width: 100%;
+            height: 4px;
+            background-color: #bbbbbb;
+            position: absolute;
+            transition: 0.4s;
+        }
+
+        /* Top bar */
+        .bar:nth-child(1) {
+            top: 0;
+        }
+
+        /* Middle bar */
+        .bar:nth-child(2) {
+            top: 12px;
+        }
+
+        /* Bottom bar */
+        .bar:nth-child(3) {
+            top: 24px;
+        }
+
+        /* Add an animation when the button is clicked */
+        .menu-button.active .bar:nth-child(1) {
+            transform: rotate(-45deg) translate(-5px, 6px);
+        }
+        .menu-button.active .bar:nth-child(2) {
+            opacity: 0;
+        }
+        .menu-button.active .bar:nth-child(3) {
+            transform: rotate(45deg) translate(-5px, -6px);
+        }
+
+        /* Styles for the menu */
+        .menu {
+            display: none;
+            position: absolute;
+            top: 60px;
+            right: 0;
+            background: #333;
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .menu.active {
+            display: block;
+        }
+
+        .menu li {
+            padding: 10px;
+        }
+
+        .menu li a {
+            color: #c2bab7;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <!-- The menu container -->
+    <div class="menu-container">
+        <!-- The menu toggle button -->
+        <div class="menu-button" id="menuButton">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+
+        <!-- The menu -->
+            <ul class="menu" id="menu">
+        <li><a href="https://i-exo.github.io/IEXO/">Home</a></li>
+        <li><a href="https://i-exo.github.io/PhotoGallery/">Photo Gallery</a></li>
+        <li><a href="https://i-exo.github.io/IEXO/">Contact</a></li>
+    </ul>
+    </div>
+
+    <script>
+        // JavaScript to toggle the button and menu's active class
+        document.getElementById("menuButton").addEventListener("click", function() {
+            this.classList.toggle("active");
+            document.getElementById("menu").classList.toggle("active");
+        });
+    </script>
+</body>
+    <head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <style>
+        /* Hide the link and provide styling to the copy button */
+        #linkToCopy {
+            display: none;
+        }
+        #copyButton {
+            background: none;
+            border: none;
+            cursor: pointer;
+            font-size: 24px;
+            color: #000000; /* Change to your preferred color */
+        }
+    </style>
+</head>
+<body>
+
+    <a href="https://i-exo.github.io/IEXO/" id="linkToCopy">https://i-exo.github.io/IEXO/</a>
+
+    <button id="copyButton" title="Copy Link"><i class="fa-solid fa-share"></i></button>
+
+    <script>
+        // Function to copy a link to the clipboard
+        function copyLinkToClipboard() {
+            // Create a temporary input element to copy the link
+            var tempInput = document.createElement("input");
+            tempInput.value = "https://i-exo.github.io/IEXO/"; // Replace with your actual link
+
+            // Append the temporary input element to the document
+            document.body.appendChild(tempInput);
+
+            // Select the text in the temporary input element
+            tempInput.select();
+            tempInput.setSelectionRange(0, 99999); // For mobile devices
+
+            // Copy the selected text to the clipboard
+            document.execCommand("copy");
+
+            // Remove the temporary input element
+            document.body.removeChild(tempInput);
+
+            // Change the icon to indicate a successful copy
+            var copyButton = document.getElementById("copyButton");
+            copyButton.innerHTML = '<i class="fas fa-check"></i>';
+
+            // Reset the icon after a short delay
+            setTimeout(function() {
+                copyButton.innerHTML = '<i class="fa-solid fa-share"></i>';
+            }, 2000);
+        }
+
+        // Add a click event listener to the copy button
+        var copyButton = document.getElementById("copyButton");
+        copyButton.addEventListener("click", copyLinkToClipboard);
+    </script>
+</body>
+<body>
+<head>
+    <style>
+        /* Styling for the photo gallery */
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 10px;
+        }
+
+        .gallery img {
+            width: 100%;
+            height: auto;
+            border: 5px solid #fff; /* Add a white frame */
+            box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3); /* Add a shadow */
+            transition: transform 0.2s, border-color 0.2s; /* Add a smooth transition on hover */
+            cursor: pointer;
+        }
+
+        .gallery img:hover {
+            transform: scale(1.05); /* Add a scaling effect on hover */
+            border-color: #fff; /* Change the frame color on hover */
+            box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.6); /* Increase shadow on hover */
+        }
+
+        /* Styling for the photo details modal */
+        .modal {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.8);
+            z-index: 1;
+            overflow: auto;
+        }
+
+        .modal-content {
+            position: relative;
+            width: 80%;
+            max-width: 800px;
+            margin: 50px auto;
+            background-color: #fff;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.6);
+            padding: 20px;
+        }
+
+        .modal img {
+            max-width: 100%;
+            display: block;
+            margin: 0 auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="gallery">
+        <img src="Moons1T.jpeg" alt="Image 1" onclick="showDetails('Image 1', 'This is the first photo.', 'Moons1T.jpeg')">
+        <img src="Moons1T.jpeg" alt="Image 2" onclick="showDetails('Image 2', 'This is the second photo.', 'Moons1T.jpeg')">
+        <img src="Moons1T.jpeg" alt="Image 3" onclick="showDetails('Image 3', 'This is the third photo.', 'Moons1T.jpeg')">
+        <!-- Add more images as needed -->
+    </div>
+
+    <div class="modal" id="modal">
+        <div class="modal-content">
+            <span onclick="hideDetails()" style="cursor: pointer; position: absolute; top: 10px; right: 10px; padding: 10px;">&times;</span>
+            <h2 id="modal-title">Photo Details</h2>
+            <p id="modal-description">Description here</p>
+            <img id="modal-image" src="" alt="Zoomed Image">
+        </div>
+    </div>
+
+    <script>
+        function showDetails(title, description, imageUrl) {
+            const modal = document.getElementById('modal');
+            const modalTitle = document.getElementById('modal-title');
+            const modalDescription = document.getElementById('modal-description');
+            const modalImage = document.getElementById('modal-image');
+
+            modal.style.display = 'block';
+            modalTitle.textContent = title;
+            modalDescription.textContent = description;
+            modalImage.src = imageUrl;
+        }
+
+        function hideDetails() {
+            const modal = document.getElementById('modal');
+            modal.style.display = 'none';
+        }
+    </script>
+</body>
+    
+    <footer>
+         <p>&copy; I  E  X  O</p>
+    </footer>
 </body>
 </html>
